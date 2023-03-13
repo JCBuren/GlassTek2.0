@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import { MdOutlineRequest } from "react-icons/md"
-import { AiOutlineHome } from "react-icons/ai"
+import { NavLink } from "react-router-dom"
+
+import { Link } from "react-router-dom"
 import Excavator from "../assets/Excavator.png"
 import Diagnostic from "../assets/Diagnostic.png"
 import OpenClose from "../assets/OpenClose.png"
@@ -17,23 +18,27 @@ import Facebook from "../assets/Facebook.png"
 import Snapchat from "../assets/Snapchat.png"
 import Google from "../assets/Google.png"
 
-
 const Home = () => {
 	const [open, setOpen] = useState(true)
 	const Menus = [
-		{ title: "Home", src:HomeLogo},
-		{ title: "Quote", src:Quote},
-		{ title: "Auto Glass Replacement", src:WindshieldReplace, gap: true },
-		{ title: "Auto Glass Repair ", src:WindshieldChip},
-		{ title: "Ag Equip / Industrial", src:Excavator},
-		{ title: "Semi / Tractor Trailer", src:Semi},
-		{ title: "Sensor Calibration", src:Diagnostic},
-		{ title: "Locomotive Equipment", src:Train},
-        { title: "RV / Campers", src:Rv},
-        { title: "Meet the Crew", src:Guy, gap: true},
-        { title: "Facebook", src:Facebook},
-        { title: "Snapchat", src:Snapchat},
-        { title: "Leave a Review", src:Google}
+		{ title: "Home", src: HomeLogo, href: "/" },
+		{ title: "Quote", src: Quote, href: "/Quote" },
+		{
+			title: "Auto Glass Replacement",
+			src: WindshieldReplace,
+			href: "/Replace",
+			gap: true,
+		},
+		{ title: "Auto Glass Repair ", src: WindshieldChip, href: "/Repair" },
+		{ title: "Ag Equip / Industrial", src: Excavator, href: "/Ag" },
+		{ title: "Semi / Tractor Trailer", src: Semi, href: "/Semi" },
+		{ title: "Sensor Calibration", src: Diagnostic, href: "/Sensor" },
+		{ title: "Locomotive Equipment", src: Train, href: "/Train" },
+		{ title: "RV / Campers", src: Rv, href: "/Rv" },
+		{ title: "Meet the Crew", src: Guy, href: "/About", gap: true },
+		{ title: "Facebook", src: Facebook, href: "/" },
+		{ title: "Snapchat", src: Snapchat, href: "/" },
+		{ title: "Leave a Review", src: Google, href: "/" },
 	]
 
 	return (
@@ -69,17 +74,16 @@ const Home = () => {
 						<li
 							key={index}
 							className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
-                ${Menu.gap ? "mt-9" : "mt-2"} ${
-								index === 0 && "bg-light-white"
-							} `}
+							${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"} `}
 						>
-							<img src={Menu.src} className=""/>
+							<img src={Menu.src} className="" />
+
 							<span
 								className={`${
 									!open && "hidden"
 								} origin-left duration-200`}
 							>
-								{Menu.title}
+								<NavLink to={`${Menu.href}`}>{Menu.title}</NavLink>
 							</span>
 						</li>
 					))}
