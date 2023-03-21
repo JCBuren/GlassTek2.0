@@ -17,6 +17,7 @@ import Guy from "../assets/Guy.png"
 import Facebook from "../assets/Facebook.png"
 import Snapchat from "../assets/Snapchat.png"
 import Google from "../assets/Google.png"
+import HomeImage from "../assets/GlassReplace.jpg"
 
 const Home = () => {
 	const [open, setOpen] = useState(true)
@@ -42,15 +43,15 @@ const Home = () => {
 	]
 
 	return (
-		<div className="flex">
+		<div className="flex h-auto">
 			<div
 				className={` ${
 					open ? "w-72" : "w-20 "
-				} bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
+				} bg-dark-purple px-5 relative duration-300`}
 			>
 				<img
 					src={OpenClose}
-					className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
+					className={`absolute cursor-pointer -right-3 top-9 w-7 border-my-black
             border-2 rounded-full  ${!open && "rotate-180"}`}
 					onClick={() => setOpen(!open)}
 				/>
@@ -62,7 +63,7 @@ const Home = () => {
 						}`}
 					/>
 					<h1
-						className={`text-white origin-left font-medium text-xl duration-200 ${
+						className={`text-white origin-left font-medium text-3xl duration-200 my-6 ${
 							!open && "scale-0"
 						}`}
 					>
@@ -73,10 +74,10 @@ const Home = () => {
 					{Menus.map((Menu, index) => (
 						<li
 							key={index}
-							className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+							className={`flex  rounded-md p-1 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
 							${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"} `}
 						>
-							<img src={Menu.src} className="" />
+							<img src={Menu.src} className="bg-white rounded-xl p-2" />
 
 							<span
 								className={`${
@@ -91,6 +92,8 @@ const Home = () => {
 			</div>
 			<div className="h-screen flex-1 p-7">
 				<h1 className="text-2xl font-semibold ">Home Page</h1>
+				<img src={HomeImage} className="flex max-w-[920px] max-h-[720px]"></img>
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi in consequatur dignissimos dicta illum delectus nulla optio beatae aut quos quae culpa, deleniti reprehenderit minima quibusdam debitis voluptas porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem laboriosam veniam tempora exercitationem hic quae officia, sequi expedita autem eligendi amet ab nisi repellat nostrum corrupti. Unde, repellendus consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime expedita, consequatur modi nostrum amet fugit natus dolores quod laboriosam aliquam placeat. Ut sequi, tempora excepturi tenetur pariatur placeat eligendi.</h2>
 			</div>
 		</div>
 	)
