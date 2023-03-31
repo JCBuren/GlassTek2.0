@@ -10,18 +10,20 @@ const Footer = () => {
 					Request a Quote via
 					<span className="text-gold"> Email</span>
 				</h1>
-				<div>
-					<input
-						type="text"
-						placeholder="Your Email..."
-						className="text-black sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
-					/>
-					<button className="bg-gold hover:bg-green-500 duration-300 px-5 py-2.5 rounded-md text-white font-bold md:w-auto w-full">
-						Request Code
-					</button>
+				
+				<div className="inherit sm:max-w-[300] max-h-[225]">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.1160329430295!2d-96.7786455!3d43.5832994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ecacef918517b%3A0x989f4b80c4186651!2s4020%20W%20Tickman%20St%20%23129%2C%20Sioux%20Falls%2C%20SD%2057107!5e0!3m2!1sen!2sus!4v1680213658019!5m2!1sen!2sus"
+				title="myFrame"
+				width="600"
+				height="450"				
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			/>
+	
 				</div>
 			</div>
-			<ItemsContainer />
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center pt-2 text-gray-400 text-sm pb-8">
 				<span>© 2023 GlassTek. All rights reserved.</span>
 				<span>Website Created By JB-Creations</span>

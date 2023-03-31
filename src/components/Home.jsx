@@ -17,7 +17,7 @@ import Guy from "../assets/Guy.png"
 import Facebook from "../assets/Facebook.png"
 import Snapchat from "../assets/Snapchat.png"
 import Google from "../assets/Google.png"
-import HomeImage from "../assets/GlassReplace.jpg"
+import HomeImage from "../assets/GlasstekBG.png"
 
 const Home = () => {
 	const [open, setOpen] = useState(true)
@@ -51,8 +51,8 @@ const Home = () => {
 			>
 				<img
 					src={OpenClose}
-					className={`absolute cursor-pointer -right-3 top-9 w-7 border-my-black
-            border-2 rounded-full  ${!open && "rotate-180"}`}
+					className={`absolute cursor-pointer -right-2 top-9 w-8 border-my-black border-2 rounded-full  
+					${!open && "rotate-180"}`}
 					onClick={() => setOpen(!open)}
 				/>
 				<div className="flex gap-x-4 items-center">
@@ -90,11 +90,10 @@ const Home = () => {
 					))}
 				</ul>
 			</div>
-			<div className="h-screen flex-1 p-7">
-				<h1 className="text-2xl font-semibold ">Home Page</h1>
-				<img src={HomeImage} className="flex max-w-[920px] max-h-[720px]"></img>
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi in consequatur dignissimos dicta illum delectus nulla optio beatae aut quos quae culpa, deleniti reprehenderit minima quibusdam debitis voluptas porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem laboriosam veniam tempora exercitationem hic quae officia, sequi expedita autem eligendi amet ab nisi repellat nostrum corrupti. Unde, repellendus consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime expedita, consequatur modi nostrum amet fugit natus dolores quod laboriosam aliquam placeat. Ut sequi, tempora excepturi tenetur pariatur placeat eligendi.</h2>
-			</div>
+			<div className="flex">
+				<img src={HomeImage} className="w-screen h-screen bg-cover" />			
+				<div>hellow</div>
+				</div>
 		</div>
 	)
 }
