@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Slab&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Federo&family=Merriweather:wght@300&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Merriweather:wght@300&family=Roboto+Slab&display=swap");
 
 @layer base {
 	div {
-		font-family: 'Federo', sans-serif;
-		font-family: 'Merriweather', serif;
-		font-family: 'Roboto Slab', serif;
+		font-family: "Federo", sans-serif;
+		font-family: "Merriweather", serif;
+		font-family: "Roboto Slab", serif;
 	}
 
 	h1 {
 		font-family: "Merriweather", serif;
 		font-family: "Roboto Slab", serif;
+	}
+	button {
+		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#ab76c9] to-[#620899] text-white;
 	}
 }

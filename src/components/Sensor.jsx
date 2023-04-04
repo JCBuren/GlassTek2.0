@@ -1,7 +1,13 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 const Sensor = () => {
-	return <div>Sensor</div>
+	return (<>
+		<NavBar/>
+	
+		<div>About</div>
+		
+		</>)
 }
 
 export default Sensor

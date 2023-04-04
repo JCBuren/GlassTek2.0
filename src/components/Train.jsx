@@ -1,7 +1,13 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 const Train = () => {
-	return <div>Train</div>
+	(<>
+		<NavBar/>
+	
+		<div>About</div>
+		
+		</>)
 }
 
 export default Train

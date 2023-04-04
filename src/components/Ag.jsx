@@ -1,7 +1,13 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 const Ag = () => {
-	return <div>Ag</div>
+	<>
+    <NavBar/>
+
+    <div>About</div>
+    
+    </>
 }
 
 export default Ag

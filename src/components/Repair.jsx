@@ -1,7 +1,15 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 const Repair = () => {
-	return <div>Repair</div>
+	return(
+	<>
+    <NavBar/>
+
+    <div>About</div>
+    
+    </>
+	)
 }
 
 export default Repair

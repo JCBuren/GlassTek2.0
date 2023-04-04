@@ -1,6 +1,8 @@
 import React from "react"
 import ItemsContainer from "./ItemsContainer"
 import SocialIcons from "./SocialIcons"
+import { NavLink } from "react-router-dom"
+
 
 const Footer = () => {
 	return (

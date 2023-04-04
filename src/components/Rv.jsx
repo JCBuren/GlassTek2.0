@@ -1,7 +1,15 @@
 import React from "react"
+import NavBar from "./NavBar"
+
 
 const Rv = () => {
-	return <div>Rv</div>
+	return( <>
+    <NavBar/>
+
+    <div>About</div>
+    
+    </>
+	)
 }
 
 export default Rv
