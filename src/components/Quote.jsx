@@ -30,12 +30,12 @@ const Quote = () => {
 
 	return (
 		<div className="flex max-h-full">
-			<NavBar />
-			<div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-				<h1 className="text-3xl">Request a Quote</h1>
+			<NavBar/>
+			<div className="col-span-3 w-4/5 h-auto  lg:p-4 ">
+				<h1 className="text-3xl w-full">Request a Quote</h1>
 				<div className="p-4">
 					<form ref={form} onSubmit={sendEmail}>
-						<div className="grid md:grid-cols-2 gap-4 w-full py-2">
+						<div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
 							<div className="flex flex-col">
 								<label className="uppercase text-sm py-2 font-bold">
 									Name
@@ -122,7 +122,7 @@ const Quote = () => {
 								name="user_insurance"
 							/>
 						</div>
-						<div className="flex flex-col py-2">
+						<div className="flex flex-col py-2 w-full">
 							<label className="uppercase text-sm py-2 font-bold">
 								Message
 							</label>
@@ -132,7 +132,7 @@ const Quote = () => {
 								name="message"
 							></textarea>
 						</div>
-						<button className="w-full p-4 text-gray-100 mt-4 font-bold">
+						<button className="w-[100%] p-4 text-gray-100 mt-4 font-bold">
 							Send Message
 						</button>
 					</form>

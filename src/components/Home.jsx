@@ -13,7 +13,7 @@ const Home = () => {
 					Welcome to Glasstek, where technology and technique meet. We
 					offer service on any vehicle in Sioux Falls and the surrounding
 					areas. We use the latest technology and tools to ensure a safe &
-					high quality product. 18 years of combined experience.
+					high quality product. We started Glasstek to....
 				</div>
 			</div>
 		</div>

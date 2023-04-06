@@ -15,13 +15,19 @@ const Footer = () => {
 					& <span className="text-gold"> Technique</span> Meet
 					
 				</h1>
-				<div className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold underline">Hours: </div>
-				<a className="">Monday 8:00am: - 5:00pm</a>
-				<a className="">Tuesday 8:00am: - 5:00pm</a>
-				<a className="">Wednesday 8:00am: - 5:00pm</a>
-				<a className="">Thursday 8:00am: - 5:00pm</a>
-				<a className="">Friday 8:00am: - 5:00pm</a>
-				<a className="">Saturday & Sunday: Closed</a>
+				<div className="grid grid-cols-1">
+				<h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold underline">Hours:</h1>
+				<a className="py-1">Monday 8:00am: - 5:00pm</a>
+				<a className="py-1">Tuesday 8:00am: - 5:00pm</a>
+				<a className="py-1">Wednesday 8:00am: - 5:00pm</a>
+				<a className="py-1">Thursday 8:00am: - 5:00pm</a>
+				<a className="py-1">Friday 8:00am: - 5:00pm</a>
+				<a className="py-1">Saturday & Sunday: Closed</a>
+				<a>Location: <span>4020 W. Tickman St. #129
+					Sioux Falls, SD 57107</span>
+				</a>
+				<a>Phone: <span>605-951-9314</span></a>
+				</div>
 				
 
 				<div className="inherit sm:max-w-[300] max-h-[225]">
