@@ -34,8 +34,7 @@ const NavBar = () => {
 		{ title: "Locomotive Equipment", src: Train, href: "/Train" },
 		{ title: "RV / Campers", src: Rv, href: "/Rv" },
 		{ title: "Meet the Crew", src: Guy, href: "/About", gap: true },
-		{ title: "Facebook", src: Facebook, href: "/" },
-		{ title: "Snapchat", src: Snapchat, href: "/" },
+		{ title: "Facebook", src: Facebook, href: "www.facebook.com/glassteksd" },	
 		{ title: "Leave a Review", src: Google, href: "/" },
 	]
 	return (
@@ -81,6 +80,13 @@ const NavBar = () => {
 						</span>
 					</li>
 				))}
+				{/* <li className="flex  rounded-md p-1 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
+					<img src={Facebook} className="bg-white rounded-xl p-2"/>
+					<span className={`${!open && "hidden"} origin-left duration-200`}>
+					<NavLink to={{pathname: "www.facebook.com/glassteksd"}} target="_blank"><a href="www.facebook.com/glassteksd
+">Facebook</a></NavLink>
+					</span>
+				</li> */}
 			</ul>
 		</div>
 	)

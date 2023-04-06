@@ -7,12 +7,23 @@ import { NavLink } from "react-router-dom"
 const Footer = () => {
 	return (
 		<footer className="bg-dark-purple text-white">
-			<div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
+			<div className=" md:flex md:justify-between md:items-center sm:px-12 px-4  bg-[#ffffff19] py-7 ">
 				<h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-					Request a Quote via
-					<span className="text-gold"> Email</span>
+					Where
+					<span className="text-gold"> Technology </span>
+					
+					& <span className="text-gold"> Technique</span> Meet
+					
 				</h1>
+				<div className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold underline">Hours: </div>
+				<a className="">Monday 8:00am: - 5:00pm</a>
+				<a className="">Tuesday 8:00am: - 5:00pm</a>
+				<a className="">Wednesday 8:00am: - 5:00pm</a>
+				<a className="">Thursday 8:00am: - 5:00pm</a>
+				<a className="">Friday 8:00am: - 5:00pm</a>
+				<a className="">Saturday & Sunday: Closed</a>
 				
+
 				<div className="inherit sm:max-w-[300] max-h-[225]">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.1160329430295!2d-96.7786455!3d43.5832994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ecacef918517b%3A0x989f4b80c4186651!2s4020%20W%20Tickman%20St%20%23129%2C%20Sioux%20Falls%2C%20SD%2057107!5e0!3m2!1sen!2sus!4v1680213658019!5m2!1sen!2sus"

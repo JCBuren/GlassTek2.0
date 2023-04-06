@@ -53,7 +53,7 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_phone"
+									name="user_email"
 								/>
 							</div>
 						</div>
@@ -65,7 +65,7 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_name"
+									name="user_phone"
 								/>
 							</div>
 							<div className="flex flex-col">
@@ -75,7 +75,7 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_phone"
+									name="user_vin"
 								/>
 							</div>
 						</div>
@@ -88,7 +88,7 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_name"
+									name="user_year"
 								/>
 							</div>
 							<div className="flex flex-col">
@@ -98,7 +98,7 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_phone"
+									name="user_make"
 								/>
 							</div>
 							<div className="flex flex-col">
@@ -108,16 +108,16 @@ const Quote = () => {
 								<input
 									className="border-2 rounded-lg p-3 flex border-gray-300"
 									type="text"
-									name="user_phone"
+									name="user_model"
 								/>
 							</div>
 						</div>
-						<div className="">
+						<div className="flex pt-4">
 							<label className="uppercase text-sm py-2 font-bold">
-								Insurance?
+								Are you using insurance?
 							</label>
 							<input
-								className="flex h-6 w-6"
+								className="flex h-6 w-6 ml-4 mt-1.5"
 								type="checkbox"
 								name="user_insurance"
 							/>
