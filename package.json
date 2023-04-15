@@ -1,6 +1,6 @@
 {
   "name": "glasstek2",
-  "homepage": "https://glasstek.us",
+  "homepage": "glasstek.us",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
