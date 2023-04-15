@@ -1,6 +1,5 @@
 {
   "name": "glasstek2",
-  "homepage": "https://JCBuren.github.io/Glasstek2.0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
