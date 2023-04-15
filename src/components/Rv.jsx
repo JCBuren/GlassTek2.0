@@ -12,7 +12,7 @@ const Rv = () => {
                     <button className="flex p-4 ml-14 mt-4">Call us Today!</button>
                 </a>
             </div>
-            <img src={TrainPic} alt="/" className="w-[1080px] h-[1240px] " />
+            <img src="/" alt="/" className="w-[1080px] h-[1240px] " />
             
         </div>
     </>

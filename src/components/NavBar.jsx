@@ -32,20 +32,25 @@ const NavBar = () => {
 		{ title: "Semi / Tractor Trailer", src: Semi, href: "/Semi" },
 		{ title: "Sensor Calibration", src: Diagnostic, href: "/Sensor" },
 		{ title: "Locomotive Equipment", src: Train, href: "/Train" },
-		{ title: "RV / Campers", src: Rv, href: "/Rv" },
-		{ title: "Meet the Crew", src: Guy, href: "/About", gap: true },
-		{ title: "Facebook", src: Facebook, href: "www.facebook.com/glassteksd" },	
+		// { title: "RV / Campers", src: Rv, href: "/Rv" },
+		// { title: "Meet the Crew", src: Guy, href: "/About", gap: true },
+		{
+			title: "Facebook",
+			src: Facebook,
+			href: "www.facebook.com/glassteksd",
+			gap: true,
+		},
 		{ title: "Leave a Review", src: Google, href: "/" },
 	]
 	return (
 		<div
 			className={` ${
-				open ? "w-72" : "w-20 "
-			} bg-dark-purple px-5 relative duration-300`}
+				open ? "w-72" : "w-28 "
+			} bg-dark-purple px-2 relative duration-300`}
 		>
 			<img
 				src={OpenClose}
-				className={`absolute cursor-pointer -right-2 top-9 w-8 border-my-black border-2 rounded-full  
+				className={`absolute cursor-pointer -right-4 top-8 w-10 border-my-black border-2 rounded-full  
 					${!open && "rotate-180"}`}
 				onClick={() => setOpen(!open)}
 			/>
@@ -64,14 +69,17 @@ const NavBar = () => {
 					GlassTek
 				</h1> */}
 			</div>
-			<ul className="pt-6">
+			<ul className="pt-2">
 				{Menus.map((Menu, index) => (
 					<li
 						key={index}
 						className={`flex  rounded-md p-1 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
-							${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"} `}
+							${Menu.gap ? "mt-6" : "mt-3"}  `}
 					>
-						<img src={Menu.src} className="bg-white rounded-xl p-2" />
+						<img
+							src={Menu.src}
+							className="bg-white rounded-xl p-2 items-c"
+						/>
 
 						<span
 							className={`${!open && "hidden"} origin-left duration-200`}
